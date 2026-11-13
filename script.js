@@ -1,5 +1,5 @@
 const _0x1a2b = "R09MRA==";
-const _0x3c4d = "IWdhbGZfdGVyY2VzX3NpX3NpaFR7TUhU";
+const _0x3c4d = "fSFnYWxmX3RlcmNlc19zaV9zaWhUe01IVA==";
 
 function checkPasscode() {
     const userInput = document.getElementById("passcode-input").value.trim();
