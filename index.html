@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Hidden Treasure | CTF Challenge</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>📜 The Ancient Secret Treasure</h1>
+            <p class="subtitle">Gateway to a forgotten mystery...</p>
+        </header>
+
+        <!-- Passcode Lock Screen -->
+        <div id="lock-screen" class="card">
+            <h2>🔒 Enter Secret Passcode</h2>
+            <p>Provide the correct passcode to unlock the ancient map and hidden flag.</p>
+            <p class="hint"><i>Hint: Inspect the ancient scrolls (Source Code) to find the key!</i></p>
+            
+            <input type="password" id="passcode-input" placeholder="Enter passcode here...">
+            <button onclick="checkPasscode()">Unlock the Vault</button>
+            <p id="error-msg" class="error"></p>
+        </div>
+
+        <!-- Hidden Content -->
+        <div id="secret-content" class="card hidden">
+            <h2>🗝️ Access Granted: The Secret Chamber</h2>
+            
+            <div class="clue-box">
+                <h3>Clue #1: The Map Marker</h3>
+                <p>Deep within the ancient forest, stand beside the <strong>"Obsidian Pillar"</strong> and walk 100 paces toward the setting sun.</p>
+            </div>
+
+            <div class="clue-box" style="border-left-color: #66fcf1;">
+                <h3>🏆 Treasure Found (Flag):</h3>
+                <p id="flag-display" style="color: #66fcf1; font-family: monospace; font-size: 1.1rem; font-weight: bold;"></p>
+            </div>
+            
+            <br>
+            <button class="btn-lock" onclick="lockVault()">Lock Vault Again 🔒</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
